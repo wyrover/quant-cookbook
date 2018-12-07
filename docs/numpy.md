@@ -361,8 +361,13 @@ print(a.dtype)
 ### arange
 
 ```python
-import numpy as np
 a = np.arange(10)
+```
+
+### random.random
+
+```python
+a = np.random.random((2, 2))
 ```
 
 ### mershgrid
