@@ -1,4 +1,6 @@
 - [配置环境](quant-cookbook.md)
 - [numpy](numpy.md)
-- [numpy 文档](https://www.numpy.org.cn/)
+  - [numpy 文档](https://www.numpy.org.cn/)
+- [scipy](scipy.md)
+- [pandas](pandas.md)
 - [Matplotlib 中文文档](https://www.matplotlib.org.cn/)
