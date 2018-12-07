@@ -185,7 +185,21 @@ map
 >>>
 ```
 
+![](https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/06/MultiDimensional-Array.png)
+
 ## Array
+
+### 一维
+
+```python
+a = np.array([1, 2, 3])
+```
+
+### 多维
+
+```python
+a = np.array([(1, 2, 3), (4, 5, 6)])
+```
 
 ### numpy.arange()
 
@@ -226,6 +240,11 @@ array([1, 1], dtype='timedelta64[D]')
 ```
 
 ## dtype
+
+```python
+a = np.array[(1, 2, 3)]
+print(a.dtype)
+```
 
 ### int8
 
@@ -358,7 +377,15 @@ a = np.arange(10)
 
 ### shape
 
+形状
+
 ### ndim
+
+维度
+
+### flatten
+
+扁平化
 
 ## 切片
 
@@ -407,6 +434,8 @@ a = np.arange(10)
 选取 `n` 行 `m` 列...的元素
 
 ## 坐标轴
+
+![](https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/06/array-368x300.png)
 
 ### newaxis
 
