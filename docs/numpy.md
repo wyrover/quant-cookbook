@@ -356,9 +356,9 @@ a = np.arange(10)
 
 ## 形状和纬度
 
-## shape
+### shape
 
-## ndim
+### ndim
 
 ## 切片
 
