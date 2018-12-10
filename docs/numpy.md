@@ -189,18 +189,6 @@ map
 
 ## Array
 
-### 一维
-
-```python
-a = np.array([1, 2, 3])
-```
-
-### 多维
-
-```python
-a = np.array([(1, 2, 3), (4, 5, 6)])
-```
-
 ### numpy.arange()
 
 ```python
@@ -330,44 +318,86 @@ print(a.dtype)
 
 ## 创建 ndarray
 
-### array
+### array()
+
+```python
+np.array([1,2,3])
+```
+
+```python
+np.array([(1,2,3),(4,5,6)])
+```
 
 ### asarray
 
 ### asanyarray
 
-### arange
-
 ### empty
+
+创建没有初始化的数据
 
 ### empty_like
 
 ### zeros
 
+```python
+np.zeros(3)
+```
+
 ### zero_like
 
 ### ones
+
+```python
+np.ones((3, 4))
+```
 
 ### ones_like
 
 ### full
 
+```python
+np.full((2,3), 8)
+```
+
 ### full_like
 
 ### eye
 
-### identity
-
-### arange
-
 ```python
-a = np.arange(10)
+np.eye(5)
 ```
 
-### random.random
+### identity
+
+### arange()
 
 ```python
-a = np.random.random((2, 2))
+np.arange(0, 10, 3)
+```
+
+### linspace()
+
+在给定的范围，均匀的创建数据
+
+```python
+np.linspace(0, 100, 6)
+```
+
+### random.rand()
+
+```python
+np.random.rand(4, 5)
+```
+
+```python
+np.random.rand(6, 7)*100
+```
+
+### random.randint()
+
+```python
+np.random.randint(5, size=(2,3))
 ```
 
 ### mershgrid
@@ -392,7 +422,39 @@ a = np.random.random((2, 2))
 
 扁平化
 
-## 切片
+### reshape
+
+改变数据形状，不会对原始数据进行修改，返回一组新数据
+
+### resize
+
+改变数据形状，会对原始数据进行修改，不返回数据
+
+### ravel
+
+将成一维返回
+
+### vstack
+
+上下合并
+
+### hstack
+
+左右合并
+
+### hsplit
+
+水平分割 n 份
+
+### vsplit
+
+垂直分割 n 份
+
+### copy
+
+深度拷贝
+
+## 索引和切片
 
 ### [n]
 
@@ -469,9 +531,69 @@ array([[0],
  (3, 1)
 ```
 
-## 分割
+## 添加删除
 
-split
+### append()
+
+```python
+np.append(arr, values)
+```
+
+### insert()
+
+```python
+np.insert(arr, 2, values)
+```
+
+### delete()
+
+```python
+# 删除 row 上的元素
+np.delete(arr, 3, axis=0)
+```
+
+```python
+# 删除 column 上的元素
+np.delete(arr, 4, axis=1)
+```
+
+## 合并和分割
+
+### concatenate()
+
+```python
+np.concatenate((arr1, arr2), axis=0)
+```
+
+```python
+np.concatenate((arr1, arr2), axis=1)
+```
+
+### split()
+
+```python
+np.split(arr, 3)
+```
+
+### hsplit()
+
+```python
+np.hsplit(arr, 5)
+```
+
+## 运算
+
+### +
+
+### -
+
+### \*
+
+### \*\*
+
+### 条件判断
+
+### 矩阵乘
 
 ## 随机函数
 
@@ -526,23 +648,23 @@ randint(begin, end, num=1) 从给定的 `begin` 和 `end` 随机选取 `num` 个
 
 ## 统计函数
 
-### sum
+### sum()
 
 求和
 
-### mean
+### mean()
 
 平均数
 
-### average
+### average()
 
 加权平均
 
-### var
+### var()
 
 方差
 
-### std
+### std()
 
 标准差
 
@@ -712,17 +834,35 @@ randint(begin, end, num=1) 从给定的 `begin` 和 `end` 随机选取 `num` 个
 
 ### logical_xor
 
-## 文件读写
+## 导入导出
 
-### load
+### load()
 
-### loadtxt
+### loadtxt()
 
-### save
+```python
+np.loadtxt('file.txt')
+```
 
-### savetxt
+### genfromtxt()
 
-### savez
+```python
+np.genfromtxt('file.csv', delimiter=',')
+```
+
+### save()
+
+### savetxt()
+
+```python
+np.savetxt('file.txt', arr, delimiter=' ')
+```
+
+```python
+np.savetxt('file.csv', arr, delimiter=',')
+```
+
+### savez()
 
 ### mat
 
@@ -774,3 +914,7 @@ randint(begin, end, num=1) 从给定的 `begin` 和 `end` 随机选取 `num` 个
 ### lstsq
 
 计算 `Ax = b` 的最小二乘解
+
+## cheatsheet
+
+![](https://raw.githubusercontent.com/kailashahirwar/cheatsheets-ai/master/Numpy.png)
