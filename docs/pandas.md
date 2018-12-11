@@ -1,3 +1,8 @@
+Pandas 基于两种数据类型：series 与 dataframe。
+
+一个 series 是一个一维的数据类型，其中每一个元素都有一个标签。series 类似于 Numpy 中元素带标签的数组。其中，标签可以是数字或者字符串。
+一个 dataframe 是一个二维的表结构。Pandas 的 dataframe 可以存储许多种不同的数据类型，并且每一个坐标轴都有自己的标签。你可以把它想象成一个 series 的字典项。
+
 ## 数据结构
 
 ### Series
@@ -165,3 +170,15 @@ pd.options.display.max_rows = 1000000
 ## cheatsheet
 
 ![](https://raw.githubusercontent.com/kailashahirwar/cheatsheets-ai/master/Pandas-3.png)
+
+## 读取 csv 文件为 dataframe
+
+```python
+import pandas as pd filepath = r'C:/Users/lenovo/Desktop/20180108-百度地图/20180108-百度地图/data.csv' df = pd.read_csv(filepath)
+#为了方便，我只显示三行，其实结果并不是这样子
+print(df)
+
+#检测下数据格式是否为
+DataFrame print(type(df))
+#输出class 'pandas.core.frame.DataFrame
+```

@@ -12,6 +12,7 @@
 - [机器学习](machine-learn-01.md)
 - [R 语言](R.md)
 - [Excel 函数表](excel.md)
+- [Matlab](matlab.md)
 - [术语](terms.md)
 - [数据公式表](http://upupming.site/docsify-katex/docs/#/supported)
 - [BigQuant 文档](https://bigquant.com/doc/index.html)
