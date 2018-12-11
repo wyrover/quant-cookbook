@@ -13,3 +13,4 @@
 - [术语](terms.md)
 - [数据公式表](http://upupming.site/docsify-katex/docs/#/supported)
 - [BigQuant 文档](https://bigquant.com/doc/index.html)
+- [PyQt](pyqt.md)
