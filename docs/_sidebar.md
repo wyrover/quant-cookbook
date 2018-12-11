@@ -4,6 +4,8 @@
   - [numpy 文档](https://www.numpy.org.cn/)
 - [scipy](scipy.md)
 - [pandas](pandas.md)
+- [statsmodel](statsmodel.md)
+- [scikit-learn](scikit-learn.md)
 - [Matplotlib](matplotlib.md)
   - [Matplotlib 中文文档](https://www.matplotlib.org.cn/)
 - [pyecharts](https://github.com/pyecharts/pyecharts)
@@ -14,3 +16,4 @@
 - [数据公式表](http://upupming.site/docsify-katex/docs/#/supported)
 - [BigQuant 文档](https://bigquant.com/doc/index.html)
 - [PyQt](pyqt.md)
+- [主流的比较流行的 Python 量化开源框架](links.md)
