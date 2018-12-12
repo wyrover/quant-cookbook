@@ -1,3 +1,139 @@
+## 算术运算
+
+### plus
+
+加法
+
+### uplus
+
+一元加法
+
+### minus
+
+减法
+
+### uminus
+
+一元减法
+
+### times
+
+按元素乘法
+
+### rdivide
+
+数组右除
+
+### ldivide
+
+数组左除
+
+### power
+
+按元素求幂
+
+### mtimes
+
+矩阵乘法
+
+### mrdivide
+
+对线性方程组 xA = B 求解 x
+
+### mldivide
+
+对线性方程组 Ax = B 求解 x
+
+### mpower
+
+矩阵幂
+
+### comprod
+
+累计乘积
+
+### comsum
+
+累积和
+
+### diff
+
+差分和近似导数
+
+### movsum
+
+移动总和
+
+### prod
+
+数组元素的乘积
+
+### sum
+
+数组元素总和
+
+### ceil
+
+朝正无穷大四舍五入
+
+### fix
+
+朝零四舍五入
+
+### floor
+
+朝负无穷大四舍五入
+
+### idivide
+
+带有舍入选项的整除
+
+### mod
+
+除后的余数（取模运算）
+
+### rem
+
+除后的余数
+
+### round
+
+四舍五入为最近的小数或整数
+
+### bsxfun
+
+对两个数组应用按元素运算（启用隐式扩展）
+
+## 三角学
+
+## 指数和对数
+
+### exp
+
+### expm1
+
+### log
+
+### log10
+
+### log1p
+
+### log2
+
+### nextpow2
+
+### nthroot
+
+### pow2
+
+### reallog
+
+### realpow
+
+### realsqrt
+
+### sqrt
+
 ## 关系运算符
 
 ### <
