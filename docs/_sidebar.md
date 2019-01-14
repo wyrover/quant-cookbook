@@ -21,6 +21,7 @@
 - [主流的比较流行的 Python 量化开源框架](links.md)
 - [HBase](hbase.md)
 - [Spark](spark.md)
+  - [Spark 编程指南简体中文版](https://aiyanbo.gitbooks.io/spark-programming-guide-zh-cn/content/)
 - [Hadoop](hadoop.md)
 - [Hive](hive.md)
 - [Go](go.md)
